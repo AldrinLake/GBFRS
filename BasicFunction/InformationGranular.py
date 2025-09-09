@@ -109,9 +109,8 @@ class InformationGranular:
 
     def calculate_k_nearest_different_class_samples_that__participate_in_compute_of_lower_approximation(self, instance_label_difference, instance_feature_difference):
         """
-        *instance_label_difference_large_than_threshold: 大于阈值的样本标记差异性矩阵
-        *instance_feature_difference： 样本特征空间差异性
-        # 计算样本的k近邻个异类样本的位置，邻居由两部分组成：
+        *instance_label_difference_large_than_threshold
+        *instance_feature_difference
         # ① Samples with label difference greater than α and less than 1, quantity is k/2
         # ② Samples with label difference equal to 1, select nearest samples according to nearest neighbor principle, quantity is k/2
         """

@@ -417,7 +417,7 @@ def AttributeReduction(X, Y, min_sample=9, miss_class_threshold=None, distance_m
 
 if __name__ == '__main__':
     datasetName = 'CAL500'
-    data = scio.loadmat('../../标记分布数据集/' + datasetName + '.mat')
+    data = scio.loadmat('../../ldl_data/' + datasetName + '.mat')
     X = data['features'][:, :]
     Y = data['labels'][:, :]
     # Normalize feature values
