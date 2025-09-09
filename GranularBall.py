@@ -22,7 +22,7 @@ Granular ball splitting conditions:
 
 class GranularBall:
     """ class of the granular ball
-        data 格式 [{attribute1,attribute2,...,attributeN},{index}]
+        data format: [{attribute1,attribute2,...,attributeN},{index}]
     """
 
     def __init__(self, X_with_index, selected_feature_list, label_difference_matrix, distance_metric=''):
@@ -398,7 +398,7 @@ def AttributeReduction(X, Y, min_sample=9, miss_class_threshold=None, distance_m
             selected_features.remove(f)
             # Real-time progress bar
             sg.one_line_progress_meter('progress bar', len(selected_features), select_feature_number,
-                                       "distance:{} \nmax_ball:{}\nmiss_class_threshold:{}\n维度X{},Y{}\nselect:{}".format(
+                                       "distance:{} \nmax_ball:{}\nmiss_class_threshold:{}\n dim:X{},Y{}\nselect:{}".format(
                                            distance_metric, min_sample, miss_class_threshold, str(X.shape),
                                            str(Y.shape), str(flag)))
         selected_features.append(flag)
